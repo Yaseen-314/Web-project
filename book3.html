@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: aqua;
+            background: linear-gradient(45deg, #d2001a, #7462ff, #f48e21, #23d5ab);
+            animation: color 12s ease-in-out infinite;
+            background-size: 300% 300%;
+            padding: 0;
+        }
+
+        @keyframes color {
+            0% {
+                background-position: 0 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0 50%;
+            }
+        }
+
+
+        /* header */
+
+        header {
+            margin: 15px;
+        }
+
+        .title {
+            background-color: gray;
+            display: flex;
+            justify-content: center;
+            color: white;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            height: 65px;
+            align-items: center;
+        }
+
+        .navbar {
+            background-color: black;
+            display: flex;
+            justify-content: end;
+            padding: 5px 20px;
+            height: 38px;
+        }
+
+
+        /* body */
+
+        main {
+            background-color: white;
+            width: 55%;
+            height: auto;
+            margin: auto;
+            padding: 15px;
+            border-radius: 10px;
+            padding-left: 23px;
+        }
+
+        .container {
+            width: 45%;
+            background-color: #f8f9fa;
+            margin-bottom: 30px;
+            border-radius: 5px;
+        }
+
+        details {
+            margin-top: 5px;
+        }
+
+        summary {
+            font-weight: bold;
+        }
+
+        .fst-details {
+            margin-top: 15px;
+        }
+
+        dd input {
+            width: 100%;
+        }
+
+        img {
+            border: 1px solid black;
+        }
+
+        .li-lft {
+            margin-left: -30px;
+        }
+
+
+        /* footer */
+
+        footer {
+            background-color: gray;
+            height: 30px;
+            margin-top: 35px;
+        }
+
+        footer div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        /* modal */
+
+        .modal-body {
+            height: 100px;
+        }
+
+        .modal-body button {
+            display: flex;
+            justify-content: end;
+        }
+
+
+
+        /* media query */
+
+        @media screen and (orientation : portrait) {
+
+            .cards-section {
+                width: 90%;
+                font-size: 1.2rem;
+            }
+
+            header {
+                background-color: blue;
+            }
+
+            .container {
+                width: 90%;
+            }
+
+
+            .img img {
+                height: 400px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <div class="title">
+                <h2>Welcome to book showcase</h2>
+            </div>
+            <nav class="navbar">
+                <a href="../Books-project/landing-page.html">Home</a>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- body -->
+
+    <main class="cards-section">
+
+        <h3>Book 3: A NEW HISTORY OF INDIA</h3>
+
+        <div class="img">
+
+            <img src="../public/image/History book.webp" alt="">
+        </div>
+
+        <details class="fst-details">
+            <summary>Genre</summary>
+            <ul>
+                <li class="li-lft">History</li>
+                <!-- <li class="li-lft">Education</li> -->
+            </ul>
+        </details>
+
+        <!-- <details>
+            <summary>Index Page</summary>
+            <ul>
+                <li class="li-lft">Technology</li>
+                <li class="li-lft">Education</li>
+            </ul>
+        </details> -->
+
+        <details>
+            <summary>Author</summary>
+            <ul class="list-unstyled">
+                <li>Rudrangshu Mukherjee, Shobita Punja Toby, Sinclair</li>
+                <li></li>
+                <li></li>
+            </ul>
+        </details>
+
+        <details>
+            <summary>Overview</summary>
+            <ul class="list-unstyled">
+                <li>A complete one-volume history of India illustrated throughout by maps and photographs in full
+                    colour.
+                    The book covers all the major landmarks of Indian history from prehistoric times up to the
+                    twenty-first century—starting with the country’s geological origins a few billion years in the past
+                    and the migration of Homo sapiens from Africa into the region several millennia ago. It traces the
+                    evolution of Indian civilization through a multitude of epochs, personalities, and turning points,
+                    including the Harappan Culture, Vedic Society, the age of Mahavira and the Buddha, Ashoka and the
+                    Mauryas, the Gupta period, the Delhi Sultanate, major kingdoms in the east, west, and south, the
+                    Mughal empire, European incursions into the subcontinent, the British Raj, the freedom struggle led
+                    by Gandhi, Nehru, Patel, Bose, Tagore, and others, Independence and Partition, and key developments
+                    in the life of the modern republic. Deepening the overarching narrative are essays on archaeology,
+                    caste, religion, art, architecture, philosophy, language, culture, the economy, and various aspects
+                    of the nation’s plural, diverse society. Written by award-winning historian Rudrangshu Mukherjee
+                    along with cultural historian Shobita Punja and photographer-archivist Toby Sinclair, A New History
+                    of India brings the story of one of the oldest, most complex countries on earth to vivid life by
+                    blending state-of-the-art pictures and maps with a text of depth, clarity, and rigorous scholarship.
+                </li>
+            </ul>
+        </details>
+
+        <details>
+            <summary>Purchase Links</summary>
+            <ul>
+                <li class="li-lft"><a
+                        href="https://www.amazon.in/NEW-HISTORY-INDIA-Origins-Twenty-First/dp/9391047513">Amazon</a>
+                </li>
+                <!-- <li class="li-lft"><a href="">Flipkart</a></li> -->
+            </ul>
+        </details>
+
+
+
+
+        <!-- feedback form -->
+
+        <h6 class="mt-4 ">Feedback form</h6>
+
+        <div class="container mt-3">
+
+            <dl>
+                <dt>Name</dt>
+                <dd><input type="text" class="form-control" required></dd>
+
+                <dt>Feedback:</dt>
+                <dd><textarea name="" id="" class="w-100 form-control"></textarea></dd>
+            </dl>
+
+            <button class="btn btn-primary w-100 " type="button" data-bs-target="#feedback"
+                data-bs-toggle="modal">Submit Feedback</button>
+        </div>
+
+
+
+    </main>
+
+
+    <footer>
+        <footer class="footer">
+            <div>
+                <p>© 2025 Book Showcase | All rights reserved</p>
+            </div>
+        </footer>
+    </footer>
+
+    <div class="modal" id="feedback">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header bg-primary text-white">
+                    <h3>Feedback Submited Successfully</h3>
+                </div>
+
+                <div class="modal-body ">
+                    <h6>Thank you for your Feedback</h6>
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-success" data-bs-dismiss="modal">ok</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
